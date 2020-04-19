@@ -1,0 +1,46 @@
+<div class="container">
+  <h1 class="text-center">Calculadora en Angular</h1>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="cuerpo">
+        <div class="calc-display">
+          <div class="calc-dispsub">{{ initial }}</div>
+          {{ numCurrent }}
+        </div>
+        <div class="princip">
+          <table style="width: 100%;">
+            <tr>
+              <td class="calc acClean" colspan="3" (click)="clean()">AC</td>
+              <td class="calc operac" colspan="1" (click)="getOperation('/')">/</td>
+            </tr>
+            <tr>
+              <td class="calc numCal" (click)="clickNumber('7')">7</td>
+              <td class="calc numCal" (click)="clickNumber('8')">8</td>
+              <td class="calc numCal" (click)="clickNumber('9')">9</td>
+              <td class="calc operac" (click)="getOperation('*')">x</td>
+            </tr>
+            <tr>
+              <td class="calc numCal" (click)="clickNumber('4')">4</td>
+              <td class="calc numCal" (click)="clickNumber('5')">5</td>
+              <td class="calc numCal" (click)="clickNumber('6')">6</td>
+              <td class="calc operac" (click)="getOperation('-')">-</td>
+            </tr>
+            <tr>
+              <td class="calc numCal" (click)="clickNumber('1')">1</td>
+              <td class="calc numCal" (click)="clickNumber('2')">2</td>
+              <td class="calc numCal" (click)="clickNumber('3')">3</td>
+              <td class="calc operac" (click)="getOperation('+')">+</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="calc numCal" (click)="clickNumber('0')">0</td>
+              <td class="calc numCal" (click)="insertDecimal()">.</td>
+              <td class="calc igual" (click)="getOperation('=')">=</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>

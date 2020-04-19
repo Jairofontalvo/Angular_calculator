@@ -1,0 +1,53 @@
+.calc-display {
+  background: lightgrey;
+  padding: 5% !important;
+  font-size: 75px;
+  text-align: right;
+  font-family: Courier, monospace;
+  overflow: auto;
+}
+.calc-dispsub {
+  height: 25%;
+  font-size: 2rem;
+  overflow: auto;
+}
+.princip {
+  height: calc(200% / 3);
+}
+.calc {
+  margin: 0;
+  width: 25%;
+  height: 20%;
+  background: whitesmoke;
+  color: black;
+  padding: 5%;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.9;
+}
+.operac {
+  color: white;
+  background-color: #f89312;
+  border-bottom: .5px solid #000;
+}
+.acClean {
+  color: #000;
+  border-bottom: .5px solid #000;
+}
+.cuerpo {
+  background: darkslategray;
+  margin-top: 5vh;
+  border: 3px solid black;
+  width: 100%;
+}
+.igual {
+  color: white;
+  background-color: #f89312;
+}
+
+.numCal {
+  color: #000;
+  border: .5px solid #000;
+
+}
